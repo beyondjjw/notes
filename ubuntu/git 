@@ -1,0 +1,16 @@
+-  git commit 失败，提示签名失败
+```
+>/slow/notes$ gpgconf --kill gpg-agent
+gpg2 -K --keyid-format SHORT
+~/.gnupg/pubring.kbx
+--------------------------------
+sec   rsa1024/969C802E 2022-07-09 [SC]
+      732CF870EF4900F967F0F8A8E3BC5F8B969C802E
+uid         [ 绝对 ] xxx (xxx@github.com) <xx@xx.com>
+ssb   rsa1024/6414A2D6 2022-07-09 [E]
+
+>/slow/notes$ git config --global user.signingkey 6414A2D6
+>/slow/notes$ export GPG_TTY=$(tty)
+>/slow/notes$ git commit -m "add " 
+```
+- 

@@ -1,4 +1,4 @@
 # backtrader
-conda activate python35
-pip install backtrader
+- conda activate python35
+- pip install backtrader
 
