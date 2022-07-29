@@ -15,3 +15,15 @@
 
 
 ``conda install -c conda-forge ta-lib``
+
+
+ubuntu 安装TA-Lib
+可能需要参考https://blog.csdn.net/vivian187/article/details/51750639安装编译器
+
+wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+tar xf ta-lib-0.4.0-src.tar.gz
+cd ta-lib
+./configure --prefix=/usr
+make
+sudo make install
+pip install TA-Lib
